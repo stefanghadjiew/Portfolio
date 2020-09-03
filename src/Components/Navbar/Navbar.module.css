@@ -1,0 +1,152 @@
+@keyframes animateIcon {
+    0% {
+        transform:translateY(2.5px) ;
+    }
+    20% {
+        transform: translateY(-2.5px);
+    }
+    40% {
+        transform: translateY(2.5px);
+    }
+    60% {
+        transform: translateY(-2.5px);
+    }
+    80% {
+        transform: translateY(2.5px);
+    }
+    100% {
+        transform: translateY(-2.5px);
+    }
+}
+
+
+.wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.filler {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(to right bottom,
+    rgba(244, 208, 63 ,0.8),
+    rgba(202, 111, 30 ,0.8) )
+}
+
+.filler p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #fff;
+    margin:auto;
+}
+
+ .filler p:hover>.reactIcon {
+    animation-name:animateIcon;
+    animation-duration: 1.5s;
+} 
+
+
+.navbar {
+    width:50%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.navlinks {
+    padding-top: 1rem;
+    padding-bottom:1rem;
+    font-weight: 400;
+    position: relative;
+    opacity: 0.6;
+    color: #E74C3C ;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+}
+
+.navlinks:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.navlinks:focus{
+    color: #E74C3C;
+    font-weight: 700; 
+    opacity: 1;
+}  
+
+.navlinks:hover {
+    opacity: 1;
+}
+
+.navlinks::before {
+    position: absolute;
+    content: '' ;
+    top: 2.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.15rem;
+    background-color:#E74C3C ;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.2s ease-in-out;
+} 
+
+.navlinks:hover::before {
+    transform: scaleX(1);
+    visibility: visible;
+    transform-origin: right;
+}
+
+.reactIcon {
+    vertical-align: middle;
+    color: #E74C3C;
+}
+
+
+@media only screen and (min-width:280px) and (max-width:336px) {
+    .wrapper {
+        display: block;
+        }
+    
+    .filler {
+            display: block;
+            width: 100%;
+        }
+
+    .navlinks {
+        font-size:0.5rem;
+    }
+    
+    .navlinks::before {
+        top:2rem;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width:336px) and (max-width:830px) {
+    .wrapper {
+        display: block;
+        }
+    
+    .filler {
+        display: block;
+        width: 100%;
+    }
+
+    .filler p {
+        padding:0.5rem;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+

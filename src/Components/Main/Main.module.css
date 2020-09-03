@@ -1,0 +1,11 @@
+.main {
+    height: 87vh;
+    margin-top: 1rem;
+    background-image:linear-gradient(to right bottom,
+    rgba(244, 208, 63 ,0.8),
+    rgba(202, 111, 30 ,0.8) 
+    ), 
+    url('../../images/wallhaven-3k7qjv.jpg');
+    background-size: cover;
+    background-position: center;
+} 

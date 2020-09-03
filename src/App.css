@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.focused {
+  color: #E74C3C;
+  font-weight: 700; 
+  opacity: 1;
+}

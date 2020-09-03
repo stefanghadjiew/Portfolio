@@ -1,0 +1,88 @@
+.wrapper {
+    padding-top: 10vh;
+}   
+
+
+.home {
+    height: 100%; 
+    /* padding-top: 40vh; */
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    z-index: -2;
+    background-size:cover; 
+}
+
+.name {
+    margin: 0;
+    font-size: 5rem;
+    border-bottom:2px solid #fff;
+    padding-bottom: 1rem;
+}
+
+.name {
+    color: #fff;
+}
+
+.greet {
+    color: #fff;
+}
+
+.span {
+    color: #E74C3C;
+}
+
+
+.button {
+    z-index: 1;
+    position: relative;
+    overflow: hidden; 
+    width: 250px;
+    height: 5vh;
+    border-radius: 20px;
+    border:none;
+    outline: 0;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 2px 15px;
+    color:#E74C3C;
+    transition: .5s ease-in-out;
+}
+
+.button::before {
+    position: absolute;
+    border-radius: 20px;
+    content:"";
+    top:0;
+    left: 0;
+    width:0;
+    height:100%;
+    background:#E74C3C;
+    z-index: -1;
+    transition: all .5s ease-in-out;
+}
+
+.button:hover {
+    color: rgba(244, 208, 63 ,0.8);
+    
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+.react {
+    vertical-align: middle;
+    color:#E74C3C;
+}
+
+@media only screen and (min-width:280px) and (max-width:720px) {
+    .name {
+        font-size: 3rem;
+    }
+    
+    .button {
+        width:200px;
+    }
+} 
