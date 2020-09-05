@@ -14,7 +14,7 @@ const Navbar = () => {
                 <p><AiFillMail  className={classes.reactIcon}/> : stefanghadjiew@abv.bg</p>
             </div> 
             <div className={classes.navbar}>
-                <Link className={classes.navlinks} to="/home">Home</Link>
+                <Link className={classes.navlinks} to="/">Home</Link>
                 <Link className={classes.navlinks} to="/about">About Me</Link>
                 <Link className={classes.navlinks} to="/projects">My Projects</Link>
             </div>

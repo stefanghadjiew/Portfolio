@@ -47,8 +47,12 @@
     text-transform: uppercase;
     box-shadow: 0 2px 15px;
     color:#E74C3C;
+    box-shadow: 3px 3px 4.5px rgba(0,0,0,1);
     transition: .5s ease-in-out;
 }
+
+
+
 
 .button::before {
     position: absolute;
@@ -65,6 +69,7 @@
 
 .button:hover {
     color: rgba(244, 208, 63 ,0.8);
+    box-shadow: 10px 10px 15px rgba(0,0,0,1);
     
 }
 

@@ -9,7 +9,7 @@ const Main = () =>{
     return(
         <div className={classes.main}>
             <Switch>
-                <Route exact path="/home" render={props => <Home {...props}/>}/>
+                <Route exact path="/" render={props => <Home {...props}/>}/>
                 <Route exact path="/about" render={props => <About {...props}/>}/>
                {/* <Route exact path="/projects" render={props => <Projects {...props}/>}/> */}
                 
