@@ -49,10 +49,6 @@
     transform:scaleX(1.35);
 }
 
-.h2:last-child:hover::before {
-    transform: scaleX(1.6);
-}   
-
 .icon {
     opacity: 0;
     margin: auto auto;
@@ -155,7 +151,6 @@
     pointer-events: none;
     position: absolute;
     top: 100%;
-    left: 0;
     font-size: 1rem;
     color:transparent;
     transition: all 1s ease-in-out; 
@@ -172,26 +167,45 @@
     background-color: #fff;
     }
 
+
 .h2:hover .icon {
     opacity: 1;
 }
 
 
 @media only screen and (min-width:280px) and (max-width:420px) {
+    .about {
+        flex-direction: column;
+    }
+
     .h2 {
-        font-size: 0.5rem;
+        font-size: 0.75rem;
     }
 
     .h2::before {
         left: -.15rem;
-        height: .6rem;
+        height: 1rem;
     }
 
     .h2:hover::before {
-        transform:scaleX(1.1)
+        transform:scaleX(1)
     }
     
-    .h2:last-child:hover::before {
-        transform:scaleX(1.2)
+    .after-journey-hover {
+        top: 350%;
+        margin-left:calc((100vw - 255px)/2);
+        margin-right: calc((100vw - 255px)/2);
+        height: 175px;
+        width: 200px;
+        font-size: 0.75rem;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .button {
+        width: 200px;
     }
 }

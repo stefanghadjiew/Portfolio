@@ -3,10 +3,6 @@ import { SiHtml5,SiCss3,SiJavascript,SiReact,SiMongodb } from "react-icons/si"
 import { FaNodeJs,FaWalking } from "react-icons/fa"
 import classNames from "classnames"
 import "./About.css"
-import CV from "../../images/CV.pdf"
-import { saveAs } from "file-saver";
-
-const blob = new Blob ([CV],{type:"application/pdf;charset=utf-8 "})
 
 const About = () => {
     return (
@@ -55,7 +51,7 @@ const About = () => {
             </div>
             <div className="button-wrapper">
                 <button 
-                onClick = {()=>{saveAs(blob)}}
+                onClick={()=> {window.open("https://drive.google.com/file/d/1Iscu2Y3t7cVIFrW_7_lsFhqdaegVsD9O/view?usp=sharing","_blank")}}
                 className="button">Resume</button>
             </div>
         </div>
