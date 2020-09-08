@@ -60,6 +60,9 @@
     z-index: 1;
 }
 
+.project-btns p {
+    padding:1vh 1vw;
+}
 
 .project-btn {
     display: flex;
@@ -98,13 +101,27 @@
     }
 
     .projects p {
-        margin: 0.75rem;
+        margin: 0.4rem;
         font-size: 0.5rem;
     }
 }
 
 @media only screen and (min-width:1280px) {
     .projects {
-        padding: 5rem 0;
+        padding: 14vh 0;
+    }
+
+    .project-btn {
+        font-size:1.5rem;
+    }
+}
+
+@media only screen and (min-width:3840px) {
+    .project-btns p {
+        font-size: 2.75rem;
+    }
+
+    .project-btn {
+        font-size: 4rem;
     }
 }

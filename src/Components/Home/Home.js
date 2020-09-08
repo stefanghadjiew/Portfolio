@@ -1,4 +1,4 @@
-import React, { useState }  from "react";
+import React from "react";
 import classes from "./Home.module.css"
 import { Link } from "react-router-dom"
 import { FaHandPeace,FaFacebook,FaInstagram } from "react-icons/fa"

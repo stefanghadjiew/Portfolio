@@ -23,7 +23,13 @@ const Projects = () => {
                         <SiMongodb className={classNames("icon","mongo")}/>
                     </div>
                     <p>An e-commerce website for watches with user auth and cart</p>
-                    <button className="project-btn"><AiFillGithub/>Github</button>
+                    <button
+                     onClick={()=>window.open("https://github.com/stefanghadjiew/MyFirstWebSite","_blank")} 
+                     network="github"
+                    className="project-btn">
+                    <AiFillGithub/>
+                    Github
+                    </button>
                 </div>
             </div>
             <div className="project">
@@ -31,18 +37,36 @@ const Projects = () => {
                 <div className="project-btns">
                     <div className="tech">
                         <SiCss3 className={classNames("icon","css")}/>
-                        <SiJavascript className={classNames("icon","js")}/>
                         <SiReact className={classNames('icon','react')}/>
                         <FaNodeJs className={classNames("icon","node")}/>
                         <SiMongodb className={classNames("icon","mongo")}/>
                     </div>
                     <p>Simple To-Watch App with user auth</p>
-                    <button className="project-btn"><AiFillGithub/>Github</button>
+                    <button
+                    onClick={()=>window.open("https://github.com/stefanghadjiew/React-App","_blank")} 
+                    network="github" 
+                    className="project-btn">
+                    <AiFillGithub/>
+                    Github
+                    </button>
                 </div>
-                
             </div>
             <div className="project">
                 <img src={img3} alt="portfolio"/>
+                <div className="project-btns">
+                    <div className="tech">
+                        <SiCss3 className={classNames("icon","css")}/>
+                        <SiReact className={classNames('icon','react')}/>
+                    </div>
+                    <p>The site you are curentl browsing</p>
+                    <button
+                    onClick={()=>window.open("https://github.com/stefanghadjiew/Portfolio","_blank")} 
+                    network="github" 
+                    className="project-btn">
+                    <AiFillGithub/>
+                    Github
+                    </button>
+                </div>
             </div>
             <div className="project">
                 <img src="" alt=""/>
