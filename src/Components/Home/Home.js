@@ -110,7 +110,7 @@ const Home = () => {
                 </Animated>
                 <h2 className={classes.greet}>I would <span className={classes.span}>love to become</span> a Frontend Web Developer <span className={classes.span}><FaHandPeace className={classes.react}/></span></h2>
                 </div>
-            <div>
+            <div className={classes.social}>
                 <SocialIcon
                 name={state.icon1.name}    
                 onMouseEnter={handleMouseEnter} 

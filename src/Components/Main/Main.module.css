@@ -1,6 +1,6 @@
 .main {
     box-shadow: 20px 20px 40px rgba(0,0,0,1);
-    height: 87vh;
+    height: 100%;
     margin-top: 1rem;
     background-image:linear-gradient(to right bottom,
     rgba(244, 208, 63 ,0.8),
@@ -10,3 +10,4 @@
     background-size: cover;
     background-position: center;
 } 
+

@@ -1,11 +1,10 @@
 .wrapper {
-    padding-top: 10vh;
+    padding-top: 5vh;
 }   
 
 
 .home {
     height: 100%; 
-    /* padding-top: 40vh; */
     overflow: hidden;
     align-items: center;
     text-align: center;
@@ -25,8 +24,7 @@
 }
 
 .greet {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 0.75rem 0.5rem;
     color: #fff;
 }
 
@@ -85,12 +83,22 @@
     color:#E74C3C;
 }
 
-@media only screen and (min-width:280px) and (max-width:720px) {
+.social {
+    display: inline-block;
+}
+
+
+@media only screen and (min-width:280px) and (max-width:411px) {
     .name {
         font-size: 3rem;
     }
     
     .button {
         width:200px;
+    }
+    
+    .social {
+        display: flex;
+        justify-content: space-evenly;
     }
 } 

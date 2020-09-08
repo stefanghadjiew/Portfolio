@@ -3,6 +3,7 @@ import { Switch,Route } from "react-router-dom"
 import classes from './Main.module.css'
 import Home from "../Home/Home"
 import About from "../About/About"
+import Projects from "../Projcets/Projects"
 
 
 const Main = () =>{
@@ -11,7 +12,7 @@ const Main = () =>{
             <Switch>
                 <Route exact path="/" render={props => <Home {...props}/>}/>
                 <Route exact path="/about" render={props => <About {...props}/>}/>
-               {/* <Route exact path="/projects" render={props => <Projects {...props}/>}/> */}
+                <Route exact path="/projects" render={props => <Projects {...props}/>}/>
                 
             </Switch> 
         </div>
