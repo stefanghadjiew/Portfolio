@@ -122,7 +122,7 @@
     }
     
     .navlinks::before {
-        top:2rem;
+        top:.75rem;
     }
 
     .navbar {
