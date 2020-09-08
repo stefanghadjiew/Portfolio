@@ -91,7 +91,8 @@
 }
 
 .button-wrapper {
-    padding-top: 60vh;
+    padding-top: 35vh;
+    padding-bottom:10vh ;
 }
 
 .button {
@@ -207,5 +208,17 @@
 
     .button {
         width: 200px;
+    }
+}
+
+@media only screen and (min-height:731px) {
+    .button-wrapper {
+       padding-bottom: 15vh;
+    }
+}
+
+@media only screen and (min-height:823px) {
+    .button-wrapper {
+        padding-bottom: 20vh;
     }
 }

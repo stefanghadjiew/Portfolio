@@ -116,13 +116,13 @@
             display: block;
             width: 100%;
         }
-
-    .navlinks {
-        font-size:0.5rem;
-    }
     
+    .navlinks {
+        font-size: 0.7rem;
+    }   
+
     .navlinks::before {
-        top:.75rem;
+        top: 0.85rem;
     }
 
     .navbar {
@@ -131,7 +131,7 @@
     }
 }
 
-@media only screen and (min-width:336px) and (max-width:830px) {
+@media only screen and (min-width:336px) and (max-width:1024px) {
     .wrapper {
         display: block;
         }
@@ -150,4 +150,19 @@
         margin-top: 1rem;
     }
 }
+
+@media only screen and (min-height:1024px) and (max-width:1024px) {
+    .navlinks {
+        font-size: 2rem;
+    }
+
+    .navlinks::before {
+        top: 3rem;
+    }
+
+    .filler p {
+        font-size: 2rem;
+    }
+}
+
 
