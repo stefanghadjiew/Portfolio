@@ -114,8 +114,6 @@
 }
 
 
-
-
 .button::before {
     position: absolute;
     border-radius: 20px;
@@ -174,7 +172,7 @@
 }
 
 
-@media only screen and (min-width:280px) and (max-width:420px) {
+@media only screen and (min-width:280px) and (max-width:540px) {
     .about {
         flex-direction: column;
     }
@@ -194,7 +192,7 @@
     
     .after-journey-hover {
         top: 350%;
-        margin-left:calc((100vw - 255px)/2);
+        margin-left:calc((100vw - 247.5px)/2);
         margin-right: calc((100vw - 255px)/2);
         height: 175px;
         width: 200px;
@@ -219,6 +217,57 @@
 
 @media only screen and (min-height:823px) {
     .button-wrapper {
+        padding-bottom: 18vh;
+    }
+}
+
+@media only screen and (min-height:1366px) {
+    .button-wrapper {
+        padding-bottom: 27.5vh;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .after-journey-hover {
+        left: -50%;
+        height: 350px;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .button-wrapper {
+        padding-top: 50vh;
         padding-bottom: 20vh;
+    }
+}
+
+@media only screen and (min-width:3840px) {
+    .button {
+        width: 600px;
+        font-size: 3rem;
+    }
+
+    .h2 {
+        font-size: 5rem;
+    }
+
+    .h2::before {
+        height: 7rem;
+    }
+
+    .after-journey-hover {
+        margin-top: 2.5rem;
+        width: 600px;
+        height: 1000px;
+        font-size: 2.5rem;
+    }
+    
+    .icon {
+        width: 150px;
+        height: 150px;
     }
 }

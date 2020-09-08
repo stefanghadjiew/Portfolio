@@ -83,11 +83,27 @@
 }
 
 .social {
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:2.5vh;
+    padding-bottom:2.5vh;
+   
+}
+
+.icon {
+    color: #fff;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: .5s ease-in-out;
+}
+
+.icon:hover {
+    color: #e34c26;
 }
 
 
-@media only screen and (min-width:280px) and (max-width:411px) {
+@media only screen and (min-width:280px) and (max-width:540px) {
     .name {
         font-size: 3rem;
     }
@@ -97,31 +113,41 @@
     }
     
     .social {
-        display: flex;
-        justify-content: space-evenly;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
     }
 } 
 
 
 @media only screen and (max-height:568px) {
-    .name {
-        font-size: 2rem;
-    }
+    
 }
 
-@media only screen and (min-height:812px) {
+@media only screen and (min-height:720px) {
     .social {
         padding-top: 18.5vh;
+        padding-bottom: 8.5vh;
     }
 }
 
 @media only screen and (min-height:823px) {
     .social {
-        padding-top: 10vh;
+        padding-top: 18.5vh;
+        padding-bottom:16.5vh;
     }
 }
 
 @media only screen and (min-width:768px) {
+    .social {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
     .greet {
         margin:1.5rem 1.5rem ;
     }
@@ -138,13 +164,14 @@
     .button {
         font-size: 1.5rem;
     }
+
 }
 
 
 @media only screen and (min-width:1024px) {
     .home {
         padding-top: 10vh;
-        padding-bottom: 10vh;
+        padding-bottom: 15vh;
     }
 
     .button {
@@ -152,3 +179,38 @@
     }
 }
    
+@media only screen and (min-width:1280px) {
+    .button {
+        font-size: 1rem;
+    }
+
+    .home {
+        padding-bottom: 10vh;
+    }
+}
+
+@media only screen and (min-width:3840px) {
+    .button {
+        width: 600px;
+        font-size: 2rem;
+    }
+
+    .home {
+        padding-top: 10vh;
+        padding-bottom:14vh;
+    }
+
+    .greet {
+        font-size: 7.5rem !important;
+    }
+
+    .name {
+        font-size: 15rem;
+    }
+
+    .icon {
+        width: 150px;
+        height: 150px;
+}
+
+}

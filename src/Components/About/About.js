@@ -19,7 +19,7 @@ const About = () => {
                     </div> 
                 </div>
                 <div className="h2">
-                    companions
+                    friends
                     <div className="after-journey-hover">
                         <SiHtml5 className={classNames('icon','html')}/>  
                         <SiCss3 className={classNames('icon','css')}/> 

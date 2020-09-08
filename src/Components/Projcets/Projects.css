@@ -92,7 +92,7 @@
     color: #cd6799;
 }
 
-@media only screen and (min-width:280px) and (max-width:1000px) {
+@media only screen and (min-width:280px) and (max-width:1024px) {
     .projects {
         grid-template-columns: auto;
     }
@@ -100,5 +100,11 @@
     .projects p {
         margin: 0.75rem;
         font-size: 0.5rem;
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .projects {
+        padding: 5rem 0;
     }
 }
