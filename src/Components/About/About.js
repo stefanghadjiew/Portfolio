@@ -41,10 +41,9 @@ const About = () => {
                 <div className="h2">
                     passion
                     <div className="after-journey-hover">
-                        The process of constantly learning is what drives me.
-                        I come from an industry where the rules are very strict,
-                        there isn`t much room for expanding ones knowledge,atleast
-                        compared to the flexibility of web-development.
+                        The process of constantly learning is my fuel.
+                        I have yet to encounter a technology that doesent fascinate me,
+                        both front and back-end...
                         Learning is my passion!
                     </div>
                 </div>

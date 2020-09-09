@@ -1,25 +1,16 @@
-.wrapper {
-    padding-top: 5vh;
-}   
-
-
 .home {
-    height: 100%; 
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    z-index: -2;
+    
     background-size:cover; 
 }
 
 .name {
-    margin: 0;
-    font-size: 5rem;
+    color: #fff;
+    font-size: 4rem;
     border-bottom:2px solid #fff;
     padding-bottom: 1rem;
-}
-
-.name {
-    color: #fff;
 }
 
 .greet {
@@ -31,12 +22,12 @@
     color: #E74C3C;
 }
 
-
 .button {
+    margin-bottom: 2rem;
     z-index: 1;
     position: relative;
     overflow: hidden; 
-    width: 250px;
+    width: 200px;
     height: 5vh;
     border-radius: 20px;
     border:none;
@@ -49,9 +40,6 @@
     box-shadow: 3px 3px 4.5px rgba(0,0,0,1);
     transition: .5s ease-in-out;
 }
-
-
-
 
 .button::before {
     position: absolute;
@@ -83,18 +71,21 @@
 }
 
 .social {
+    margin: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     display: flex;
-    justify-content: space-evenly;
-    padding-top:2.5vh;
-    padding-bottom:2.5vh;
-   
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon {
+    margin: 0.5rem;
     color: #fff;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     transition: .5s ease-in-out;
 }
 
@@ -102,115 +93,18 @@
     color: #e34c26;
 }
 
-
-@media only screen and (min-width:280px) and (max-width:540px) {
+@media only screen and (max-width:650px) {
     .name {
         font-size: 3rem;
     }
-    
-    .button {
-        width:200px;
-    }
-    
-    .social {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-    }
-
-    .icon {
-        width: 25px;
-        height: 25px;
-    }
-} 
-
-
-@media only screen and (max-height:568px) {
-    
-}
-
-@media only screen and (min-height:720px) {
-    .social {
-        padding-top: 18.5vh;
-        padding-bottom: 8.5vh;
-    }
-}
-
-@media only screen and (min-height:823px) {
-    .social {
-        padding-top: 18.5vh;
-        padding-bottom:16.5vh;
-    }
-}
-
-@media only screen and (min-width:768px) {
-    .social {
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-    }
 
     .greet {
-        margin:1.5rem 1.5rem ;
-    }
-
-    .home {
-        padding-top: 4vh;
-        padding-bottom:4vh;
-    }
-
-    .home h2 {
-        font-size: 2.5rem;
-    }
-
-    .button {
-        font-size: 1.5rem;
-    }
-
-}
-
-
-@media only screen and (min-width:1024px) {
-    .home {
-        padding-top: 10vh;
-        padding-bottom: 15vh;
-    }
-
-    .button {
-        font-size: 1.5rem;
-    }
-}
-   
-@media only screen and (min-width:1280px) {
-    .button {
         font-size: 1rem;
     }
-
-    .home {
-        padding-bottom: 10vh;
-    }
 }
 
-@media only screen and (min-width:3840px) {
-    .button {
-        width: 600px;
-        font-size: 2rem;
+@media only screen and (max-width:397px) {
+    .social {
+        flex-direction: row;
     }
-
-    .home {
-        padding-top: 10vh;
-        padding-bottom:14vh;
-    }
-
-    .greet {
-        font-size: 7.5rem !important;
-    }
-
-    .name {
-        font-size: 15rem;
-    }
-
-    .icon {
-        width: 150px;
-        height: 150px;
-}
-
 }
