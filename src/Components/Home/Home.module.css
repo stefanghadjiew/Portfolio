@@ -93,6 +93,12 @@
     color: #e34c26;
 }
 
+@media only screen and (max-width:397px) {
+    .social {
+        flex-direction: row;
+    }
+}
+
 @media only screen and (max-width:650px) {
     .name {
         font-size: 3rem;
@@ -103,8 +109,23 @@
     }
 }
 
-@media only screen and (max-width:397px) {
-    .social {
-        flex-direction: row;
-    }
+@media only screen and (min-width:3840px) {
+     .button {
+         width: 400px;
+         font-size: 2rem;
+         border-radius: 40px;
+     }
+
+     .name {
+         font-size: 12rem;
+     }
+
+     .greet {
+         font-size: 4rem;
+     }
+
+     .icon {
+         width: 100px;
+         height: 100px;
+     }
 }

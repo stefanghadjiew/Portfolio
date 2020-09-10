@@ -1,10 +1,9 @@
 .projects {
-    padding:2rem 0;
-    width: 60vw;
+    width: 60%;
     margin: 0 auto 0 auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 2rem;
+    gap: 0.5rem;
 }
 
 .project {
@@ -86,7 +85,7 @@
 }
 
 .tech {
-    margin-top: 1rem;
+    margin-top: .5rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -95,26 +94,74 @@
     color: #cd6799;
 }
 
-@media only screen and (min-width:280px) and (max-width:1024px) {
+
+
+@media only screen and (min-width:280px) and (max-width:420px) {
     .projects {
         grid-template-columns: auto;
     }
 
     .projects p {
-        margin: 0.4rem;
-        font-size: 0.5rem;
+        margin: 0.1rem;
+        font-size: 0.6rem;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
     }
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (min-width:421px) and (max-width:540px) {
     .projects {
-        padding: 14vh 0;
+        width:45%;
+        grid-template-columns: auto;
+    }
+
+    .projects p {
+        margin: 0.1rem;
+        font-size: 0.6rem;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width:541px) and (max-width:780px) {
+    .projects {
+        width: 90%;
+    }
+
+    .projects p {
+        margin: 0.1rem;
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
     }
 
     .project-btn {
-        font-size:1.5rem;
+        font-size: 1.5rem;
     }
 }
+
+@media only screen and (min-width:781px) and (max-width:1920px) {
+    .projects {
+        width: 80%;
+    }
+
+    .project-btns p {
+        margin: 0.75rem;
+    }
+
+    .project-btn {
+        font-size: 2rem;
+    }
+} 
 
 @media only screen and (min-width:3840px) {
     .project-btns p {
@@ -123,5 +170,10 @@
 
     .project-btn {
         font-size: 4rem;
+    }
+
+    .icon {
+        width: 150px;
+        height: 150px;
     }
 }

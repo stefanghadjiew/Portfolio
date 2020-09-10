@@ -3,6 +3,7 @@ import "./Projects.css";
 import img1 from "../../images/wallhaven-nzz9pv.jpg"
 import img2 from "../../images/wallhaven-45kmo3.jpg"
 import img3 from "../../images/wallhaven-nmx16y.jpg"
+import img4 from "../../images/wallhaven-kw1o87.jpg"
 import { AiFillGithub } from "react-icons/ai"
 import { FaSass } from "react-icons/fa"
 import { SiHtml5,SiJavascript,SiMongodb,SiCss3,SiReact } from "react-icons/si"
@@ -69,7 +70,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="project">
-                <img src="" alt=""/>
+                <img src={img4} alt=""/>
             </div>
         </div>
     )

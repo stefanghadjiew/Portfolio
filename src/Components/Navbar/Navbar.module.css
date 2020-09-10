@@ -134,4 +134,17 @@
     }
 }
 
+@media only screen and (min-width:3840px) {
+    .filler {
+        font-size: 2.5rem;
+    }
+
+    .navlinks {
+        font-size: 2.5rem;
+    }
+
+    .navlinks::before {
+        top: 3.5rem;
+    }
+}
 
