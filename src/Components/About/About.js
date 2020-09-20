@@ -1,8 +1,9 @@
 import React from "react";
-import { SiHtml5,SiCss3,SiJavascript,SiReact,SiMongodb } from "react-icons/si"
-import { FaNodeJs,FaWalking } from "react-icons/fa"
-import classNames from "classnames"
-import "./About.css"
+import { SiHtml5,SiCss3,SiJavascript,SiReact,SiMongodb } from "react-icons/si";
+import { FaNodeJs,FaWalking } from "react-icons/fa";
+import { MdSchool } from "react-icons/md";
+import classNames from "classnames";
+import "./About.css";
 
 const About = () => {
     return (
@@ -14,8 +15,8 @@ const About = () => {
                     className="after-journey-hover">
                     <FaWalking className={classNames("icon","walking")}/>
                     My journey began march of 2020.
-                    With the help of a friend,i dove into the web-developer world.
-                    Loved every minute of it!Hope i`ll be able to do this for the rest of my life
+                    With the help of a friend,i dove into the web-development world.
+                    Loved every minute of it!
                     </div> 
                 </div>
                 <div className="h2">
@@ -41,6 +42,7 @@ const About = () => {
                 <div className="h2">
                     passion
                     <div className="after-journey-hover">
+                        <MdSchool className={classNames('icon','html')}/>
                         The process of constantly learning is my fuel.
                         I have yet to encounter a technology that doesent fascinate me,
                         both front and back-end...

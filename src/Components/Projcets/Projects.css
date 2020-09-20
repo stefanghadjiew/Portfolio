@@ -94,6 +94,10 @@
     color: #cd6799;
 }
 
+.material_ui {
+    color:#3f51b5;
+}
+
 
 
 @media only screen and (min-width:280px) and (max-width:420px) {

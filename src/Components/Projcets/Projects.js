@@ -6,7 +6,7 @@ import img3 from "../../images/wallhaven-nmx16y.jpg"
 import img4 from "../../images/wallhaven-kw1o87.jpg"
 import { AiFillGithub } from "react-icons/ai"
 import { FaSass } from "react-icons/fa"
-import { SiHtml5,SiJavascript,SiMongodb,SiCss3,SiReact } from "react-icons/si"
+import { SiHtml5,SiJavascript,SiMongodb,SiCss3,SiReact,SiMaterialUi } from "react-icons/si"
 import { FaNodeJs } from "react-icons/fa"
 import classNames from "classnames"
 
@@ -59,7 +59,7 @@ const Projects = () => {
                         <SiCss3 className={classNames("icon","css")}/>
                         <SiReact className={classNames('icon','react')}/>
                     </div>
-                    <p>The site you are curentl browsing</p>
+                    <p>The site you are curently browsing</p>
                     <button
                     onClick={()=>window.open("https://github.com/stefanghadjiew/Portfolio","_blank")} 
                     network="github" 
@@ -70,7 +70,24 @@ const Projects = () => {
                 </div>
             </div>
             <div className="project">
-                <img src={img4} alt=""/>
+                <img src={img4} alt="chat-app"/>
+                <div className="project-btns">
+                    <div className="tech">
+                        <SiMaterialUi className={classNames('icon','material_ui')}/>
+                        <SiReact className={classNames('icon','react')}/>
+                        <SiCss3 className={classNames('icon','css')}/>
+                        <SiMongodb className={classNames('icon','mongo')}/>
+                        <FaNodeJs className={classNames('icon','node')}/>
+                    </div>
+                    <p>My first chatt application</p>
+                    <button
+                     onClick={()=>window.open("https://github.com/stefanghadjiew/chat-app","_blank")} 
+                     network="github" 
+                     className="project-btn">
+                    <AiFillGithub/>
+                    Github
+                    </button> 
+                </div>
             </div>
         </div>
     )
