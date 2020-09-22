@@ -61,7 +61,7 @@ const Projects = () => {
                     onClick={()=>window.open("https://fierce-spire-28320.herokuapp.com","_blank")} 
                     network="heroku" 
                     className="project-btn">
-                    <AiFillGithub/>
+                    <FaRegEye/>
                     Live Preview
                     </button>
                 </div>
