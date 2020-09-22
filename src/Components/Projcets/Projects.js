@@ -7,7 +7,7 @@ import img4 from "../../images/wallhaven-kw1o87.jpg"
 import { AiFillGithub } from "react-icons/ai"
 import { FaSass } from "react-icons/fa"
 import { SiHtml5,SiJavascript,SiMongodb,SiCss3,SiReact,SiMaterialUi } from "react-icons/si"
-import { FaNodeJs } from "react-icons/fa"
+import { FaNodeJs,FaRegEye } from "react-icons/fa"
 import classNames from "classnames"
 
 const Projects = () => {
@@ -31,6 +31,13 @@ const Projects = () => {
                     <AiFillGithub/>
                     Github
                     </button>
+                    <button
+                     onClick={()=>window.open("https://aqueous-castle-19920.herokuapp.com/","_blank")} 
+                     network="heroku"
+                    className="project-btn">
+                    <FaRegEye/>
+                    Live Preview
+                    </button>
                 </div>
             </div>
             <div className="project">
@@ -50,6 +57,13 @@ const Projects = () => {
                     <AiFillGithub/>
                     Github
                     </button>
+                    <button
+                    onClick={()=>window.open("https://fierce-spire-28320.herokuapp.com","_blank")} 
+                    network="heroku" 
+                    className="project-btn">
+                    <AiFillGithub/>
+                    Live Preview
+                    </button>
                 </div>
             </div>
             <div className="project">
@@ -59,7 +73,7 @@ const Projects = () => {
                         <SiCss3 className={classNames("icon","css")}/>
                         <SiReact className={classNames('icon','react')}/>
                     </div>
-                    <p>The site you are curently browsing</p>
+                    <p>The site you are currently browsing</p>
                     <button
                     onClick={()=>window.open("https://github.com/stefanghadjiew/Portfolio","_blank")} 
                     network="github" 
@@ -86,6 +100,13 @@ const Projects = () => {
                      className="project-btn">
                     <AiFillGithub/>
                     Github
+                    </button> 
+                    <button
+                     onClick={()=>window.open("https://serene-anchorage-94249.herokuapp.com","_blank")} 
+                     network="heroku" 
+                     className="project-btn">
+                    <FaRegEye/>
+                    Live Preview
                     </button> 
                 </div>
             </div>
