@@ -1,23 +1,21 @@
 import React from "react";
-import classes from "./Home.module.css"
-import { Link } from "react-router-dom"
-import { FaHandPeace,FaFacebook,FaInstagram } from "react-icons/fa"
-import { Animated } from "react-animated-css";
-import { AiFillTwitterCircle } from "react-icons/ai"
+import classes from "./Home.module.css";
+import { FaFacebook,FaInstagram } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillMail,AiFillPhone} from "react-icons/ai"
+import {ImLocation} from "react-icons/im"
 
 const Home = () => {
     return (
-        <div className={classes.home}>
-            <Link to="/projects">
-            <button className={classes.button}>See Projects</button>
-            </Link>
-            <Animated
-            animateOnMount={true}
-            animationIn="pulse" 
-            >
+        <div className={classes.main}>
+            <h1 className={classes.hello}>Hello,I`m</h1><br/>
             <h1 className={classes.name}>Stefan <span className={classes.span}>Hadzhiev</span></h1>
-            </Animated>
-            <h2 className={classes.greet}>I would <span className={classes.span}>love to become</span> a Frontend Web Developer <span className={classes.span}><FaHandPeace className={classes.react}/></span></h2>
+            <h2 className={classes.greet}>Web Developer</h2>
+            <div style={{color:"#fff",display:"flex",flexDirection:"column"}}>
+                <p style={{margin:"0.5rem"}}><ImLocation style={{verticalAlign:"middle"}}/> : Sofia,BG</p>
+                <p style={{margin:"0.5rem"}}><AiFillPhone style={{verticalAlign:"middle"}}/> : +(359)899928238</p>
+                <p style={{margin:"0.5rem"}}><AiFillMail style={{verticalAlign:"middle"}}/> : stefanghadjiew@abv.bg</p>
+            </div> 
             <div className={classes.social}>
                 <FaFacebook 
                 className={classes.icon}
@@ -32,6 +30,12 @@ const Home = () => {
                 onClick={()=>window.open("https://www.instagram.com/cheffohadjiev/","_blank")}  
                 network="instagram"/>
             </div>
+                <button 
+                onClick={()=> {window.open("https://drive.google.com/file/d/1Iscu2Y3t7cVIFrW_7_lsFhqdaegVsD9O/view?usp=sharing","_blank")}}
+                className={classes.button}>
+                Resume
+                </button>
+            
         </div>
     )
 }

@@ -1,116 +1,106 @@
-import React from "react";
-import "./Projects.css";
+import React, { useState } from "react";
+import classes from "./Projects.module.css";
 import img1 from "../../images/wallhaven-nzz9pv.jpg"
-import img2 from "../../images/wallhaven-45kmo3.jpg"
 import img3 from "../../images/wallhaven-nmx16y.jpg"
 import img4 from "../../images/wallhaven-kw1o87.jpg"
 import { AiFillGithub } from "react-icons/ai"
 import { FaSass } from "react-icons/fa"
 import { SiHtml5,SiJavascript,SiMongodb,SiCss3,SiReact,SiMaterialUi } from "react-icons/si"
 import { FaNodeJs,FaRegEye } from "react-icons/fa"
-import classNames from "classnames"
+
 
 const Projects = () => {
+
+    const [state,setState] = useState({
+        projects : [
+            {
+            img : img1,
+            alt : "e-commerce watches website",
+            icons: [
+                <SiHtml5 className={classes.HTMLicon}/>,
+                <FaSass className={classes.SASSicon}/>,
+                <SiJavascript className={classes.JSicon}/>,
+                <FaNodeJs className={classes.NODEicon}/>,
+                <SiMongodb className={classes.MONGOicon}/>
+            ],
+            btnGH : {text:"Github",icon : <AiFillGithub/>},
+            btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
+            info : "An e-commerce website for watches with user auth and cart",
+            github: "https://github.com/stefanghadjiew/MyFirstWebSite",
+
+        },
+            {
+            img : img3,
+            alt : "portfolio",
+            icons: [
+                <SiCss3 className={classes.CSSicon}/>,
+                <SiReact className={classes.REACTicon}/>
+            ],
+            btnGH : {text:"Github",icon : <AiFillGithub/>},
+            btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
+            info : "The site you are currently browsing",
+            github: "https://github.com/stefanghadjiew/Portfolio",
+
+        },
+            {
+            img : img4,
+            alt : "chat-app",
+            icons: [
+                <SiMaterialUi className={classes.MATERIALicon}/>,
+                <SiReact className={classes.REACTicon}/>,
+                <SiCss3 className={classes.CSSicon}/>,
+                <SiMongodb className={classes.MONGOicon}/>,
+                <FaNodeJs className={classes.NODEicon}/>
+            ],
+            btnGH : {text:"Github",icon : <AiFillGithub/>},
+            btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
+            info : "My first chatt application",
+            github: "https://github.com/stefanghadjiew/chat-app",
+
+        }
+        ]
+    })
+   
+    
+    const renderProjects = state.projects.map((project,index) => {
+        return (
+            <div className={classes.project}>
+                <img src={project.img} alt={project.alt}/>
+                <div className={classes.projectBtns}>
+                    <div className={classes.tech}>
+                        {project.icons.map((icon,index) => {
+                            return (
+                                <div className={classes.iconDiv}>
+                                   {icon}
+                                </div>
+                            )
+                        })} 
+                    </div>
+                    <p>{project.info}</p>
+                    <button
+                    className={classes.projectBtn} 
+                    onClick={()=> {
+                        window.open(`${project.github}`,"_blank")
+                    }}>
+                        {project.btnGH.icon}
+                        {project.btnGH.text}
+                    </button>
+                    <button 
+                    className={classes.projectBtn}
+                    /*  onClick={} */
+                    >
+                        {project.btnGHPGS.icon}
+                        {project.btnGHPGS.text}
+                    </button>
+                </div>
+            </div>
+        )
+    })
+
+    
+
     return (
-        <div className="projects">
-            <div className="project">
-                <img src={img1} alt="e-commerce watches website"/>
-                <div className="project-btns">
-                    <div className="tech">
-                        <SiHtml5 className={classNames("icon","html-1")}/>
-                        <FaSass className={classNames("icon","sass")}/>
-                        <SiJavascript className={classNames("icon","js")}/>
-                        <FaNodeJs className={classNames("icon","node")}/>
-                        <SiMongodb className={classNames("icon","mongo")}/>
-                    </div>
-                    <p>An e-commerce website for watches with user auth and cart</p>
-                    <button
-                     onClick={()=>window.open("https://github.com/stefanghadjiew/MyFirstWebSite","_blank")} 
-                     network="github"
-                    className="project-btn">
-                    <AiFillGithub/>
-                    Github
-                    </button>
-                    <button
-                     onClick={()=>window.open("https://aqueous-castle-19920.herokuapp.com/","_blank")} 
-                     network="heroku"
-                    className="project-btn">
-                    <FaRegEye/>
-                    Live Preview
-                    </button>
-                </div>
-            </div>
-            <div className="project">
-                <img src={img2} alt="to-watch app"/>
-                <div className="project-btns">
-                    <div className="tech">
-                        <SiCss3 className={classNames("icon","css")}/>
-                        <SiReact className={classNames('icon','react')}/>
-                        <FaNodeJs className={classNames("icon","node")}/>
-                        <SiMongodb className={classNames("icon","mongo")}/>
-                    </div>
-                    <p>Simple To-Watch App with user auth</p>
-                    <button
-                    onClick={()=>window.open("https://github.com/stefanghadjiew/React-App","_blank")} 
-                    network="github" 
-                    className="project-btn">
-                    <AiFillGithub/>
-                    Github
-                    </button>
-                    <button
-                    onClick={()=>window.open("https://fierce-spire-28320.herokuapp.com","_blank")} 
-                    network="heroku" 
-                    className="project-btn">
-                    <FaRegEye/>
-                    Live Preview
-                    </button>
-                </div>
-            </div>
-            <div className="project">
-                <img src={img3} alt="portfolio"/>
-                <div className="project-btns">
-                    <div className="tech">
-                        <SiCss3 className={classNames("icon","css")}/>
-                        <SiReact className={classNames('icon','react')}/>
-                    </div>
-                    <p>The site you are currently browsing</p>
-                    <button
-                    onClick={()=>window.open("https://github.com/stefanghadjiew/Portfolio","_blank")} 
-                    network="github" 
-                    className="project-btn">
-                    <AiFillGithub/>
-                    Github
-                    </button>
-                </div>
-            </div>
-            <div className="project">
-                <img src={img4} alt="chat-app"/>
-                <div className="project-btns">
-                    <div className="tech">
-                        <SiMaterialUi className={classNames('icon','material_ui')}/>
-                        <SiReact className={classNames('icon','react')}/>
-                        <SiCss3 className={classNames('icon','css')}/>
-                        <SiMongodb className={classNames('icon','mongo')}/>
-                        <FaNodeJs className={classNames('icon','node')}/>
-                    </div>
-                    <p>My first chatt application</p>
-                    <button
-                     onClick={()=>window.open("https://github.com/stefanghadjiew/chat-app","_blank")} 
-                     network="github" 
-                     className="project-btn">
-                    <AiFillGithub/>
-                    Github
-                    </button> 
-                    <button
-                     onClick={()=>window.open("https://serene-anchorage-94249.herokuapp.com","_blank")} 
-                     network="heroku" 
-                     className="project-btn">
-                    <FaRegEye/>
-                    Live Preview
-                    </button> 
-                </div>
-            </div>
-        </div>
+        [renderProjects]
     )
 }
 
