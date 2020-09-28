@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/stefanghadjiew/Portfolio.git",
+  "homepage": "https://stefanghadjiew.github.io/Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -20,14 +20,14 @@
     "serve": "^11.3.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b gh-pages -d build --remote Portfolio",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages  -d build"
-  },
+    "eject": "react-scripts eject"
+   },
   "eslintConfig": {
     "extends": "react-app"
   },
