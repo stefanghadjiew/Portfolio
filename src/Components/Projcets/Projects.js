@@ -25,8 +25,9 @@ const Projects = () => {
             ],
             btnGH : {text:"Github",icon : <AiFillGithub/>},
             btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
-            info : "An e-commerce website for watches with user auth and cart",
+            info : "e-commerce website for watches",
             github: "https://github.com/stefanghadjiew/MyFirstWebSite",
+            githubPages : "https://stefanghadjiew.github.io/MyFirstWebSiteStatic/"
 
         },
             {
@@ -38,7 +39,7 @@ const Projects = () => {
             ],
             btnGH : {text:"Github",icon : <AiFillGithub/>},
             btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
-            info : "The site you are currently browsing",
+            info : "current site",
             github: "https://github.com/stefanghadjiew/Portfolio",
 
         },
@@ -54,8 +55,9 @@ const Projects = () => {
             ],
             btnGH : {text:"Github",icon : <AiFillGithub/>},
             btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
-            info : "My first chatt application",
+            info : "chatt application",
             github: "https://github.com/stefanghadjiew/chat-app",
+            githubPages : "https://stefanghadjiew.github.io/chat-app-static/"
 
         }
         ]
@@ -87,7 +89,7 @@ const Projects = () => {
                     </button>
                     <button 
                     className={classes.projectBtn}
-                    /*  onClick={} */
+                    onClick={() => window.open(`${project.githubPages}`,"_blank")} 
                     >
                         {project.btnGHPGS.icon}
                         {project.btnGHPGS.text}
@@ -100,7 +102,9 @@ const Projects = () => {
     
 
     return (
-        [renderProjects]
+        <div className={classes.wrapper}>
+        {renderProjects}
+        </div>
     )
 }
 

@@ -1,9 +1,10 @@
 .main {
+    display: flex;
     position: relative;
     min-height:100vh; 
     background-color: #17202A ;
-    padding-left: 10vw;
-    padding-top: 5vh;
+    padding-left: 5vw;
+    padding-top: 3vh;
     padding-right: 2vw;
 } 
 
@@ -26,6 +27,7 @@
 }
 
 .greet {
+    display: inline-block;
     margin: 0.75rem 0.5rem;
     color: #fff;
 }
@@ -77,14 +79,20 @@
     
 }
 
-
+.projectsWrapper {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    margin:auto;
+}
 
 .social {
-    margin: 2rem;
+    margin: 1rem;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    right: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -105,10 +113,28 @@
     .name {
         font-size: 2.5rem;
     }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .projectsWrapper {
+        flex-direction: row;
+    }
 }
 
-@media only screen and (min-width:1024px) {
+@media only screen and (min-width:281px) and (max-width:1023px) {
+    .main {
+        flex-direction: column;
+    }
 
+    .projectsWrapper {
+        flex-direction: row;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (min-width:3840px) {

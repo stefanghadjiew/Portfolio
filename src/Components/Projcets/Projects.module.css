@@ -1,9 +1,13 @@
 .project {
-    max-width: 100vw;
-    max-height: 100vh;
     position: relative;
     border-bottom:5px solid #E74C3C;
     overflow: hidden;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 2rem;
 }
 
 .project::after {
@@ -59,7 +63,7 @@
 
 .projectBtn {
     font-size: 1rem;
-    margin: 0.5rem;
+    margin: 0.25rem;
     display: flex;
     border: none;
     outline: 0;
@@ -71,7 +75,7 @@
 }
 
 .projectBtns p {
-    margin:1rem;
+    margin:0.5rem;
     opacity: 0;
     transition: .5s ease-in-out;
 }
@@ -94,8 +98,8 @@
 
 .HTMLicon,.CSSicon,.JSicon,.REACTicon,.NODEicon,.MONGOicon,.MATERIALicon,.SASSicon {
     margin: 0.5rem;
-    height: 50px;
-    width:50px;
+    height: 40px;
+    width:40px;
     vertical-align:middle;
     transition: all 1s ease-in-out;
     color:#ebebeb;
@@ -129,14 +133,29 @@
     color: #cd6799;
 }
 
+@media only screen and (min-width:279px) and (max-width:767px) {
+    .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
 
-@media only screen and (min-width:767px) and (max-width:1920px) {
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    
     .projectBtns p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .projectBtn {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .HTMLicon,.CSSicon,.JSicon,.REACTicon,.NODEicon,.MONGOicon,.MATERIALicon,.SASSicon {
+        width: 80px;
+        height: 80px;
     }
 }
 
