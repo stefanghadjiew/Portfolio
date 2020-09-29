@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import classes from "./Projects.module.css";
-import img1 from "../../images/wallhaven-nzz9pv.jpg"
-import img3 from "../../images/wallhaven-nmx16y.jpg"
-import img4 from "../../images/wallhaven-kw1o87.jpg"
+import img1 from "../../images/wallhaven-nzz9pv.jpg";
+import img2 from "../../images/wallhaven-45kmo3.jpg";
+import img3 from "../../images/wallhaven-nmx16y.jpg";
+import img4 from "../../images/wallhaven-kw1o87.jpg";
 import { AiFillGithub } from "react-icons/ai"
 import { FaSass } from "react-icons/fa"
 import { SiHtml5,SiJavascript,SiMongodb,SiCss3,SiReact,SiMaterialUi } from "react-icons/si"
@@ -29,7 +30,7 @@ const Projects = () => {
             github: "https://github.com/stefanghadjiew/MyFirstWebSite",
             githubPages : "https://stefanghadjiew.github.io/MyFirstWebSiteStatic/"
 
-        },
+            },
             {
             img : img3,
             alt : "portfolio",
@@ -42,7 +43,7 @@ const Projects = () => {
             info : "current site",
             github: "https://github.com/stefanghadjiew/Portfolio",
 
-        },
+            },
             {
             img : img4,
             alt : "chat-app",
@@ -59,7 +60,23 @@ const Projects = () => {
             github: "https://github.com/stefanghadjiew/chat-app",
             githubPages : "https://stefanghadjiew.github.io/chat-app-static/"
 
-        }
+            },
+            {
+                img:img2,
+                alt: "To-watch-app",
+                icons : [
+                    <SiReact className={classes.REACTicon}/>,
+                    <SiCss3 className={classes.CSSicon}/>,
+                    <SiMongodb className={classes.MONGOicon}/>,
+                    <FaNodeJs className={classes.NODEicon}/>
+                ],
+                btnGH : {text:"Github",icon : <AiFillGithub/>},
+                btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
+                info : "to-watch-app",
+                github: "https://github.com/stefanghadjiew/React-App",
+                githubPages : "https://stefanghadjiew.github.io/React-app-static/"
+            }
+
         ]
     })
    
