@@ -21,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages-final-final -d build",
+    "deploy": "gh-pages -b gh-pages-new-final -d build",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",

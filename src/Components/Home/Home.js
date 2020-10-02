@@ -25,7 +25,7 @@ const Home = () => {
             <div className={classes.social}>
                 <AiFillLinkedin
                 className={classes.icon}
-                onClick={() => window.open("linkedin.com/in/stefan-hadzhiev-89a4411b8","_blank")}
+                onClick={() => window.open("https://linkedin.com/in/stefan-hadzhiev-89a4411b8","_blank")}
                 network="linkedin"/>
                 <AiFillGithub
                 className={classes.icon}
