@@ -1,7 +1,6 @@
 import React from "react";
 import classes from "./Home.module.css";
-import { FaFacebook,FaInstagram } from "react-icons/fa";
-import { AiFillMail,AiFillPhone ,AiFillTwitterCircle,AiFillGithub } from "react-icons/ai";
+import { AiFillMail,AiFillPhone,AiFillGithub,AiFillLinkedin } from "react-icons/ai";
 import {ImLocation} from "react-icons/im";
 import Projects from "../Projcets/Projects";
 const Home = () => {
@@ -24,18 +23,10 @@ const Home = () => {
                     <Projects/>
             </div>
             <div className={classes.social}>
-                <FaFacebook 
+                <AiFillLinkedin
                 className={classes.icon}
-                onClick={()=>window.open("https://www.facebook.com/search/top?q=cheffo0o","_blank")} 
-                network="facebook"/>
-                <AiFillTwitterCircle 
-                className={classes.icon}
-                onClick={()=>window.open("https://twitter.com/SHadjiew","_blank")} 
-                network="twitter"/>
-                <FaInstagram 
-                className={classes.icon}
-                onClick={()=>window.open("https://www.instagram.com/cheffohadjiev/","_blank")}  
-                network="instagram"/>
+                onClick={() => window.open("linkedin.com/in/stefan-hadzhiev-89a4411b8","_blank")}
+                network="linkedin"/>
                 <AiFillGithub
                 className={classes.icon}
                 onClick={() =>window.open("https://github.com/stefanghadjiew","_blank")}
