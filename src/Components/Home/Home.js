@@ -16,7 +16,7 @@ const Home = () => {
                     <p style={{margin:"0.5rem"}}><AiFillMail style={{verticalAlign:"middle"}}/> : stefanghadjiew@abv.bg</p>
                 </div>
                 <button 
-                    onClick={()=> {window.open("https://drive.google.com/file/d/1Iscu2Y3t7cVIFrW_7_lsFhqdaegVsD9O/view?usp=sharing","_blank")}}
+                    onClick={()=> {window.open("https://drive.google.com/file/d/1qzqczeh1tI8QI6S4tIo5FQ8qw8MaWyJ1/view?usp=sharing","_blank")}}
                     className={classes.button}>
                     Resume
                     </button>
