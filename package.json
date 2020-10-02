@@ -21,13 +21,13 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages-new-final -d build --Portfolio",
+    "deploy": "gh-pages -b gh-pages-new-final -d build --remote Portfolio",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+   },
   "eslintConfig": {
     "extends": "react-app"
   },
