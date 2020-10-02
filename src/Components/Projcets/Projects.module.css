@@ -145,17 +145,19 @@
         grid-template-columns: repeat(2,1fr);
     }
     
-    .projectBtns p {
-        font-size: 2rem;
+    
+
+    .projectBtns {
+        font-size: 1.2rem;
     }
 
     .projectBtn {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     .HTMLicon,.CSSicon,.JSicon,.REACTicon,.NODEicon,.MONGOicon,.MATERIALicon,.SASSicon {
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
     }
 }
 

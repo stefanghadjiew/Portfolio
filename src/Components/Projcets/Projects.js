@@ -4,6 +4,7 @@ import img1 from "../../images/wallhaven-nzz9pv.jpg";
 import img2 from "../../images/wallhaven-45kmo3.jpg";
 import img3 from "../../images/wallhaven-nmx16y.jpg";
 import img4 from "../../images/wallhaven-kw1o87.jpg";
+import img5 from "../../images/background1.jpg";
 import { AiFillGithub } from "react-icons/ai"
 import { FaSass } from "react-icons/fa"
 import { SiHtml5,SiJavascript,SiMongodb,SiCss3,SiReact,SiMaterialUi } from "react-icons/si"
@@ -75,6 +76,17 @@ const Projects = () => {
                 info : "to-watch-app",
                 github: "https://github.com/stefanghadjiew/React-App",
                 githubPages : "https://stefanghadjiew.github.io/React-app-static/"
+            },
+            {
+                img:img5,
+                alt:'Weather-app',
+                icons: [ <SiReact className={classes.REACTicon}/>],
+                btnGH : {text:"Github",icon : <AiFillGithub/>},
+                btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
+                info : "weather-app",
+                github: "https://github.com/stefanghadjiew/weather-app",
+                githubPages : "https://stefanghadjiew.github.io/weather-app/"
+
             }
 
         ]
