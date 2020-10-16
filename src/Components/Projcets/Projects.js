@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Projects.module.css";
+import img0 from '../../images/homeimage.jpg';
 import img1 from "../../images/wallhaven-nzz9pv.jpg";
 import img2 from "../../images/wallhaven-45kmo3.jpg";
 import img3 from "../../images/wallhaven-nmx16y.jpg";
@@ -15,6 +16,22 @@ const Projects = () => {
 
     const [state,setState] = useState({
         projects : [
+            {
+            img : img0,
+            alt : "hotels website",
+            icons: [
+                <SiMaterialUi className={classes.MATERIALicon}/>,
+                <SiReact className={classes.REACTicon}/>,
+                <FaNodeJs className={classes.NODEicon}/>,
+                
+            ],
+            btnGH : {text:"Github",icon : <AiFillGithub/>},
+            btnGHPGS : {text:"Live Preview",icon:<FaRegEye/>},
+            info : "hotels website",
+            github: "https://github.com/stefanghadjiew/Hotels",
+            githubPages : "https://stefanghadjiew.github.io/Hotels/"
+
+            },
             {
             img : img1,
             alt : "e-commerce watches website",
