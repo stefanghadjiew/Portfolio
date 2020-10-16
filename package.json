@@ -21,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-pages-final -d build --remote Portfolio",
+    "deploy": "gh-pages -b gh-pages-final-new -d build --remote Portfolio",
     "dev": "react-scripts start",
     "start": "serve -s build",
     "build": "react-scripts build",
