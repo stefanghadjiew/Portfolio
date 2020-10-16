@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.d2b6389e.chunk.css",
+    "main.js": "/Portfolio/static/js/main.612626fa.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.612626fa.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
+    "static/js/2.e71ca021.chunk.js": "/Portfolio/static/js/2.e71ca021.chunk.js",
+    "static/js/2.e71ca021.chunk.js.map": "/Portfolio/static/js/2.e71ca021.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.6db3b834ba5b3a2b8b5e5c68ce7f0819.js": "/Portfolio/precache-manifest.6db3b834ba5b3a2b8b5e5c68ce7f0819.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.d2b6389e.chunk.css.map": "/Portfolio/static/css/main.d2b6389e.chunk.css.map",
+    "static/js/2.e71ca021.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.e71ca021.chunk.js.LICENSE.txt",
+    "static/media/background1.jpg": "/Portfolio/static/media/background1.df65651b.jpg",
+    "static/media/homeImage.jpg": "/Portfolio/static/media/homeImage.a0fb51ab.jpg",
+    "static/media/wallhaven-45kmo3.jpg": "/Portfolio/static/media/wallhaven-45kmo3.e0729e9f.jpg",
+    "static/media/wallhaven-kw1o87.jpg": "/Portfolio/static/media/wallhaven-kw1o87.3a173aea.jpg",
+    "static/media/wallhaven-nmx16y.jpg": "/Portfolio/static/media/wallhaven-nmx16y.b16e9ee9.jpg",
+    "static/media/wallhaven-nzz9pv.jpg": "/Portfolio/static/media/wallhaven-nzz9pv.2f4322da.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e440ee5a.js",
+    "static/js/2.e71ca021.chunk.js",
+    "static/css/main.d2b6389e.chunk.css",
+    "static/js/main.612626fa.chunk.js"
+  ]
+}
