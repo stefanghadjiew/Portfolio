@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./Projects.module.css";
-import img0 from '../../images/homeimage.jpg';
+import img0 from '../../images/homeImage.jpg';
 import img1 from "../../images/wallhaven-nzz9pv.jpg";
 import img2 from "../../images/wallhaven-45kmo3.jpg";
 import img3 from "../../images/wallhaven-nmx16y.jpg";
